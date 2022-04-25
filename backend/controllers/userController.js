@@ -9,7 +9,7 @@ module.exports.createUser = (req, res) => {
   //hash password
   const salt = bcrypt.genSaltSync(10);
   const hashedPassword = bcrypt.hashSync(password, salt);
-  console.log("hashed password:", hashedPassword);
+  // console.log("hashed password:", hashedPassword);
 
   //setting the user table
   pool.query(
@@ -30,12 +30,12 @@ module.exports.createUser = (req, res) => {
 };
 
 //get users
-module.exports.getAllUser = (req, res) => {
-  pool.query("SELECT * FROM users", (error, results) => {
-    if (error) {
-      throw error;
-    } else {
-      res.status(200).json(results.rows);
-    }
-  });
-};
+module.exports.getAllUsers = (req,res)=>{
+    pool.query("SELECT * FROM users",(error,results)=>{
+      if(error){
+        throw error 
+      }else{
+        res.status(200).json(results.rows)
+      }
+    })
+}
