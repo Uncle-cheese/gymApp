@@ -19,8 +19,23 @@ module.exports.createUser = (req, res) => {
       if (error) {
         throw error;
       } else {
-        res.status(201).send(`user with id ${results.rows[0].id} has been saved successfully`);
+        res
+          .status(201)
+          .send(
+            `user with id ${results.rows[0].id} has been saved successfully`
+          );
       }
     }
   );
+};
+
+//get users
+module.exports.getAllUser = (req, res) => {
+  pool.query("SELECT * FROM users", (error, results) => {
+    if (error) {
+      throw error;
+    } else {
+      res.status(200).json(results.rows);
+    }
+  });
 };
