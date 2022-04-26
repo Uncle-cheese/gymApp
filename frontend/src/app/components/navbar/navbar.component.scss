@@ -1,52 +1,109 @@
-.navbar-brand
-{
-  font-family: 'Palette Mosaic', cursive;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+// .navbar-brand
+// {
+//   font-size: 1.5rem;
+//   font-weight: 500;
+
+// }
 .navbar{
-  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
-}
-.nav_tabs{
-
-  display: flex;
-  // justify-content: flex-end;
-  align-content: center;
-   padding: 10px 50px 10px 250px;
-}
-.button__tabs{
-
-  display: flex;
-  justify-content: end;
-  padding: 10px 30px 10px 210px;
-
-  // padding-left: 3rem;
-}
-@media(max-width:990px){
-  .nav_tabs{
-    padding-left: 0;
-
-  }
-}
-@media(max-width:990px){
-  .button__tabs{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-left: 0;
-  }
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
+  // padding-bottom: 2%;
 }
 
-.bi {
-  color: white;
-  font-size: 24px;
-}
+// .nav_tabs{
 
-.register{
-  padding-right: 13%;
-}
+//   display: flex;
+//   // justify-content: flex-end;
+//   align-content: center;
+//   //  padding: 10px 50px 10px 250px;
+// }
+// .navItems{
+//   // display: flex;
+//   // justify-content: center !important;
+//   margin-left: 50%;
+
+// }
+
+// .button__tabs{
+
+//     // display: flex;
+//     // justify-content: end;
+//     margin-left: 50%;
+//     // align-items: flex-end;
+
+
+// }
+
+
+
+
+
+// // DROPDOWN STYLES
+// .dropdown-toggler-link {
+//     color: #333;
+// }
+
+// .list {
+//   display: none;
+//   position: absolute;
+//   padding: 10px 0;
+//   border-radius: 5px;
+//   list-style: none;
+//   transition: display 1s ease-in-out !important;
+// }
+
+// // .list li {
+
+// // }
+
+// .list a {
+//   text-decoration: none !important;
+//   text-transform: capitalize !important;
+//   display: block;
+//   padding: 10px;
+// }
+
+// .list a:hover {
+//   background-color: rgb(116, 114, 114);
+// }
+
+// .dropdown-list-item:hover > .list{
+//   display: block !important;
+// }
+
+
+// @media(max-width:990px){
+
+//   .list {
+//     position: relative;
+//   }
+//   .nav_tabs{
+//     padding-left: 0;
+
+//   }
+// }
+// @media(max-width:990px){
+//   .button__tabs{
+//     display: flex;
+//     justify-content: center;
+//     padding-left: 0;
+//   }
+//   .navItems{
+//     // display: flex;
+//     // justify-content: start;
+//     margin-right: 50%;
+//   }
+// }
+
+// .bi {
+//   color: white;
+//   font-size: 24px;
+// }
+
+// .register{
+//   padding-right: 13%;
+// }
 
 .nav-link{
-  font-family: 'Palette Mosaic', cursive;
   text-decoration: underline;
+  color: black;
 }

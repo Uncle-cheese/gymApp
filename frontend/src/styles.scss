@@ -1,5 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
-body
-{
-  background-color: #DBF9FC;
+@font-face {
+ font-family: 'Josefin Sans', sans-serif;
+  src: url('./assets/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf');
+  src: url('./assets/Josefin_Sans/JosefinSans-VariableFont_wght.ttf');
+  src: url('./assets/Josefin_Sans/static/JosefinSans-Bold.ttf');
+  src: url('./assets/Josefin_Sans/static/JosefinSans-BoldItalic.ttf');
+  src: url('./assets/Josefin_Sans/static/JosefinSans-ExtraLightItalic.ttf');
+  src: url('./assets/Josefin_Sans/static/JosefinSans-Light.ttf');
+  src: url('./assets/Josefin_Sans/static/JosefinSans-LightItalic.ttf');
+  src: url('./assets/Josefin_Sans/static/JosefinSans-Medium.ttf');
+  src: url('./assets/Josefin_Sans/static/JosefinSans-MediumItalic.ttf');
+  src: url('./assets/Josefin_Sans/static/JosefinSans-Regular.ttf');
+  src: url('./assets/Josefin_Sans/static/JosefinSans-SemiBold.ttf');
+  src: url('./assets/Josefin_Sans/static/JosefinSans-SemiBoldItalic.ttf');
+  src: url('./assets/Josefin_Sans/static/JosefinSans-Thin.ttf');
+  src: url('./assets/Josefin_Sans/static/JosefinSans-ThinItalic.ttf');
+}
+
+:root{
+  font-family: 'Josefin Sans', sans-serif;
+  background-color:#c3cfe2;
 }

@@ -1,33 +1,70 @@
-<div class=" d-sm-block">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Jizzy Home <br>CoreWorkout</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <div class="nav_tabs">
-
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Schedule</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Program</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Classes</a>
-          </ul>
-        </div>
-        <div class="button__tabs">
-            <button type="button" class="btn btn-outline-secondary me-2" routerLink="/signin">Login</button>
-            <button type="button" class="btn btn-outline-secondary" routerLink="/signup">Signup</button>
-        </div>
-      </div>
+<!-- Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid justify-content-between">
+    <!-- Left elements -->
+    <div class="d-flex">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">Jizzy Home <br />CoreWorkout</a>
+<!-- 
+      <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
     </div>
-  </nav>
-</div>
+    <!-- Left elements -->
 
+    <!-- Center elements -->
+    <div>
+
+    </div>
+    <ul class="navbar-nav flex-row d-none d-md-flex">
+      <li class="nav-item me-3 me-lg-1 active">
+        <a class="nav-link" href="#"> Home </a>
+      </li>
+
+      <li class="nav-item me-3 me-lg-1">
+        <a class="nav-link" href="#"> Schedule </a>
+      </li>
+
+      <li class="nav-item me-3 me-lg-1">
+        <a class="nav-link" href="#"> Program </a>
+      </li>
+
+      <li class="nav-item me-3 me-lg-1">
+        <a class="nav-link" href="#"> Classes </a>
+      </li>
+    </ul>
+    <!-- Center elements -->
+
+    <!-- Right elements -->
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item me-3 me-lg-1">
+        <a
+          type="button"
+          class="btn btn-outline-secondary me-2"
+          routerLink="/signin"
+        >
+          Login
+        </a>
+      </li>
+      <li class="nav-item me-3 me-lg-1">
+        <a
+          type="button"
+          class="btn bg-secondary text-white"
+          routerLink="/signup"
+        >
+          Signup
+        </a>
+      </li>
+    </ul>
+    <!-- Right elements -->
+  </div>
+</nav>
+<!-- Navbar -->
