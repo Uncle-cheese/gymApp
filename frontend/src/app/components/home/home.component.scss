@@ -1,5 +1,5 @@
 .container {
-  background: red;
+  // background: red;
   height: 100%;
 }
 .card {
@@ -44,24 +44,61 @@
 }
 .content
 {
-  height: 20vh;
-  background: red;
+  height: 25vh;
+  background: gray;
 }
 
 .transparent__footer {
-  z-index: 100;
+  text-align: center;
   position: absolute;
   bottom: 0;
-  display: flex;
-  flex-direction: row;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  justify-content: center;
-  align-items: center;
+  z-index: 100;
+  letter-spacing: 1px;
+  padding-top: 25%;
 
+}
+
+@media(max-width:575px){
+  .Book__details{
+    display: none;
+  }
+  #btn_book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 1050px) {
-  .transparent__footer {
-    flex-direction: column;
-  }
+  // .transparent__footer {
+  //   flex-direction: column;
+  // }
 }
+.book{
+  bottom: 0;
+  position:absolute;
+  width: 100%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  // padding-bottom: 3%;
+  z-index: 100;
+}
+.Book__details{
+  color: white;
+  background-color: rgba(0,0,0,0.6);
+  border: 2px solid gray;
+  border-radius: 4px;
+  padding: 10px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
