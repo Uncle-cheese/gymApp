@@ -1,16 +1,10 @@
 .container {
-  // background: red;
   height: 100%;
 }
-.card {
-  width: 100%;
-  height: 100%;
-}
-
 .background_img {
   background-image: url("https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg");
   background-repeat: no-repeat;
-  height: 65vh;
+  height: 100vh;
   width: 100vw;
   aspect-ratio: 16/9;
   background-position: center;
@@ -18,7 +12,6 @@
   background-size: cover;
   position: relative;
 }
-
 .back_text {
   text-align: center;
   position: absolute;
@@ -29,7 +22,6 @@
   z-index: 3;
   letter-spacing: 5px;
 }
-
 .background_img::after {
   content: "";
   position: absolute; /* Sit on top of the page content */
@@ -44,38 +36,17 @@
 }
 .content
 {
-  height: 25vh;
-  background: gray;
+  height: 50vh;
 }
-
 .transparent__footer {
   text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  z-index: 100;
-  letter-spacing: 1px;
-  padding-top: 25%;
-
+  color: #fff;
+  margin-bottom: 32px;
 }
-
-@media(max-width:575px){
-  .Book__details{
-    display: none;
-  }
-  #btn_book{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  // .transparent__footer {
-  //   flex-direction: column;
-  // }
+.btn-secondary{
+  padding: 10px;
+  margin-right: 1rem;
+  outline: none;
 }
 .book{
   bottom: 0;
@@ -84,7 +55,6 @@
   padding-top: 8%;
   padding-bottom: 8%;
   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  // padding-bottom: 3%;
   z-index: 100;
 }
 .Book__details{
@@ -93,12 +63,110 @@
   border: 2px solid gray;
   border-radius: 4px;
   padding: 10px;
+  outline: none;
 }
 .container{
   display: flex;
   justify-content: center;
 
 }
+.card{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+}
+.card__description{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.simage{
+  width: 100%;
+  height: 100%;
+}
+.fit{
+  color: orange;
 
+}
 
+.overview {
+  padding: 0;
+  margin: 0;
+  background-color: orange;
+}
+.text {
+  background-color: orangered;
+}
+.image {
+  width: 100%;
+  height: 100%;
+}
+.footer__img{
+  background-image: url('https://images.pexels.com/photos/3768593/pexels-photo-3768593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
+}
+.footer__img::after {
+  content: "";
+  position: absolute; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100% !important; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+}
+.footer__text{
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 100;
+  width: 50%;
+}
+.btn__join{
+  position: absolute;
+  top: 45%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 100;
+}
+.footer{
+  text-align: center;
+  bottom: 0;
+  color: white;
+  left: 0;
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  // background-color: rgba(0,0,0,0.5);
+  background: black;
+  z-index: 100;
+}
+@media(max-width:575px){
+
+}
+
+@media screen and (max-width: 1050px) {
+  .bookings {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #btn_book {
+    width: 100%;
+  }
+  .card__description{
+    gap: 10px;
+  }
+}
